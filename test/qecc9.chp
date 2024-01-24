@@ -1,26 +1,26 @@
-Encodes a qubit of your choice using the Shor 9-qubit quantum
-error-correcting code, then applies an encoded Pauli operation of
-your choice to the codeword, and finally decodes the codeword and
-measures the result.
-The qubit to be encoded is stored in qubit 0.  Qubit 1 is 1 if and
-only if an X operation should be applied to the codeword, and qubit
-2 is 1 if and only if a Z should be applied.  So for example, if
-you want to encode |0> and then apply a Y=-iXZ operation, type the
-following at the command line:
-chp qecc9 zZZ
-The output in this case should be |1>.  Or, if you want to encode
-|0>+i|1> and then apply X, type the following:
-chp qecc9 yZz
-The output in this case should be random (since the final state is
-|0>-i|1>).  In general:
-x for |0>
-X for |1>
-y for |0>+i|1>
-Y for |0>-i|1>
-z for |0>+|1>
-Z for |0>-|1>
-Note that since the measurement is in the standard basis, applying
-the Z operator should not have an observable effect.
+# Encodes a qubit of your choice using the Shor 9-qubit quantum
+# error-correcting code, then applies an encoded Pauli operation of
+# your choice to the codeword, and finally decodes the codeword and
+# measures the result.
+# The qubit to be encoded is stored in qubit 0.  Qubit 1 is 1 if and
+# only if an X operation should be applied to the codeword, and qubit
+# 2 is 1 if and only if a Z should be applied.  So for example, if
+# you want to encode |0> and then apply a Y=-iXZ operation, type the
+# following at the command line:
+# chp qecc9 zZZ
+# The output in this case should be |1>.  Or, if you want to encode
+# |0>+i|1> and then apply X, type the following:
+# chp qecc9 yZz
+# The output in this case should be random (since the final state is
+# |0>-i|1>).  In general:
+# x for |0>
+# X for |1>
+# y for |0>+i|1>
+# Y for |0>-i|1>
+# z for |0>+|1>
+# Z for |0>-|1>
+# Note that since the measurement is in the standard basis, applying
+# the Z operator should not have an observable effect.
 #
 c 0 3
 c 3 0

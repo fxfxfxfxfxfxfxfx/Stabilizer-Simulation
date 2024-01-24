@@ -1,6 +1,6 @@
-Prepares an EPR pair |00>+|11> across qubits
-0 and 1, then measures qubit 1.  The outcome
-should be random.
+#Prepares an EPR pair |00>+|11> across qubits
+#0 and 1, then measures qubit 1.  The outcome
+#should be random.
 #
 h 0
 c 0 1
